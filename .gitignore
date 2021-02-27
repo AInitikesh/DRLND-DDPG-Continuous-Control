@@ -1,1 +1,3 @@
 reacher*.app
+.ipynb_checkpoints
+__pycache__
