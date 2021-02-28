@@ -12,7 +12,7 @@ In this environment, a double-jointed arm can move to target locations. A reward
 The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 
 The task is continuous, and in order to solve the environment, agent must get an average score of +30 over 100 consecutive episodes. 
-Training algorithm is `In [5]: ddpg` inside [Continuous_Control.ipynb](https://github.com/AInitikesh/DRLND-DDPG-Continuous-Control/blob/master/Continuous_Control.ipynb). This function iterates over `n_episodes=200` to train the ddpg agent model. Max length of episode can be `max_t=1000`. Maximum timesteps value should be equal to Agent replay buffer. I have used environment version 2 where 20 parallel agents are simulated. After 200 episodes model was not learning much and average score was constant so it doesn't makes sense to train the Agent after 200 steps. 
+Training algorithm is `In [5]: ddpg` inside [Continuous_Control.ipynb](https://github.com/AInitikesh/DRLND-DDPG-Continuous-Control/blob/master/Continuous_Control.ipynb). This function iterates over `n_episodes=200` to train the ddpg agent model. Max length of episode can be `max_t=1000`. Maximum time steps value should be equal to Agent replay buffer. I have used environment version 2 where 20 parallel agents are simulated. After 200 episodes model was not learning much and average score was constant so it doesn't makes sense to train the Agent after 200 steps. 
 
 ### DDPG Agent Hyper Parameters
 
@@ -37,7 +37,7 @@ DDPG is an actor-critic method which uses 2 neural networks. One is Actor networ
 
 ![DDPG algorithm](https://github.com/AInitikesh/DRLND-DDPG-Continuous-Control/blob/master/ddpg-algo.png)
 
-Referenced from original paper ![CONTINUOUS CONTROL WITH DEEP REINFORCEMENT
+Referenced from original paper [CONTINUOUS CONTROL WITH DEEP REINFORCEMENT
 LEARNING](https://arxiv.org/pdf/1509.02971v6.pdf)
 
 ## Plot of Rewards
@@ -54,4 +54,8 @@ Environment solved in 100 episodes!	Average Score: 36.84
 ```
 
 ## Ideas for Future Work
+
+Implement other methods like Trust Region Policy Optimization (TRPO) and Truncated Natural Policy Gradient (TNPG), Proximal Policy Optimization (PPO) and Distributed Distributional Deterministic Policy Gradients (D4PG) to check the performance. 
+
+Also tuning the hyper parameters of neural network architecture could help.
 
