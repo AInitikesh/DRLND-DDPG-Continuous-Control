@@ -24,7 +24,7 @@ The second version is useful for algorithms like [PPO](https://arxiv.org/pdf/170
 
 ### Implemented method
 
-We have used ddpg agent to sove this environemnt and solved the enviroment in 100 episodes with Average score 36.84. More details the learning algorithm, along with the chosen hyperparameters is mentioned in Report.md. It also describes the model architectures for neural networks.
+We have used ddpg agent to solve this environment and solved the environment in 100 episodes with Average score 36.84. More details the learning algorithm, along with the chosen hyper parameters is mentioned in Report.md. It also describes the model architectures for neural networks.
 ### Getting Started
 
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
